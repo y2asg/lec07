@@ -1,0 +1,13 @@
+<html>	
+  <body>
+    <?php
+       $msg = htmlspecialchars($_GET["message"]);
+       
+       $len = mb_strlen($msg);
+       for($i = 1; $i < $len + 1; $i++){
+	echo $msg[$len - $i];
+	}
+
+     ?>
+  </body>
+</html>	
